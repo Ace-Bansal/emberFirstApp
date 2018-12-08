@@ -1,0 +1,9 @@
+{{!-- {{yield}} --}}
+
+<h2>{{title}}</h2>
+
+<ul>
+    {{#each compmodel as |trial|}}
+        <li {{action "clickTrial" trial}}>{{trial}}</li>
+    {{/each}}
+</ul>
